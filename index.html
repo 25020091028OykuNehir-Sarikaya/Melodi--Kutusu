@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Melodi Kutusu</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-sb-admin-2/4.1.3/css/sb-admin-2.min.css" rel="stylesheet">
+
+    <style>
+        .album-header { padding: 3rem 1rem; text-align: center; background-color: #fff; }
+        .album-content { background-color: #f8f9fa; padding: 3rem 0; }
+        .card-img-container {
+            background-color: #fff;
+            height: 225px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            overflow: hidden;
+        }
+        .card-img-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+
+    <div id="wrapper">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15"></div>
+                <div class="sidebar-brand-text mx-3">Melodi Kutusu</div>
+            </a>
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html"><span>Anasayfa</span></a>
+            </li>
+            <hr class="sidebar-divider">
+            <li class="nav-item">
+                <a class="nav-link" href="checkout.html"><span></span></a>
+            </li>
+        </ul>
+
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-0 static-top shadow-sm">
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-1">
+                            <a class="nav-link" href="checkout.html">
+                                <i class="fas fa-shopping-cart fa-fw text-gray-600"></i>
+                                <span class="badge badge-danger badge-counter">0</span>
+                            </a>
+                        </li>
+                        <div class="topbar-divider d-none d-sm-block"></div>
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Öykü Nehir Sarıkaya</span>
+                                
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in">
+                                <a class="dropdown-item" href="login.html">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> Çıkış Yap
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="album-header">
+                    <div class="container">
+                        <h1 class="fw-light">Melodi Kutusuna hoş geldin.</h1>
+                        <p class="lead text-muted"</p>
+                    </div>
+                </div>
+
+                <div class="album-content">
+                    <div class="container-fluid">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+
+                            <div class="col mb-4">
+                                <div class="card shadow-sm h-100 border-0">
+                                    <div class="card-img-container"><img src="kulaklik.png"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-bold text-primary">JBL Tune 230NC TWS</h5>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div class="btn-group">
+                                                <button onclick="sepeteEkle('JBL Tune 230NC TWS', 2499)" class="btn btn-sm btn-outline-primary">Sepete ekle</button>
+                                                <button onclick="sepeteEkle('JBL Tune 230NC TWS', 2499, true)" class="btn btn-sm btn-primary">Satın al</button>
+                                            </div>
+                                            <small class="text-success font-weight-bold">2.499 TL</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col mb-4">
+                                <div class="card shadow-sm h-100 border-0">
+                                    <div class="card-img-container"><img src="kulaklik2.png"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-bold text-primary">Guess Triangle Pattern</h5>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div class="btn-group">
+                                                <button onclick="sepeteEkle('Guess Triangle Pattern', 3199)" class="btn btn-sm btn-outline-primary">Sepete ekle</button>
+                                                <button onclick="sepeteEkle('Guess Triangle Pattern', 3199, true)" class="btn btn-sm btn-primary">Satın al</button>
+                                            </div>
+                                            <small class="text-success font-weight-bold">3.199 TL</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col mb-4">
+                                <div class="card shadow-sm h-100 border-0">
+                                    <div class="card-img-container"><img src="kulaklik3.png"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-bold text-primary">Rampage Miracle X4</h5>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div class="btn-group">
+                                                <button onclick="sepeteEkle('Rampage Miracle X4', 1899)" class="btn btn-sm btn-outline-primary">Sepete ekle</button>
+                                                <button onclick="sepeteEkle('Rampage Miracle X4', 1899, true)" class="btn btn-sm btn-primary">Satın al</button>
+                                            </div>
+                                            <small class="text-success font-weight-bold">1.899 TL</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col mb-4">
+                                <div class="card shadow-sm h-100 border-0">
+                                    <div class="card-img-container"><img src="kulaklik4.png"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-bold text-primary">Boyun bantlı bluetooth kulaklık</h5>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div class="btn-group">
+                                                <button onclick="sepeteEkle('Boyun bantlı bluetooth kulaklık', 949)" class="btn btn-sm btn-outline-primary">Sepete ekle</button>
+                                                <button onclick="sepeteEkle('Boyun bantlı bluetooth kulaklık', 949, true)" class="btn btn-sm btn-primary">Satın al</button>
+                                            </div>
+                                            <small class="text-success font-weight-bold">949 TL</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col mb-4">
+                                <div class="card shadow-sm h-100 border-0">
+                                    <div class="card-img-container"><img src="kulaklik5.png"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-bold text-primary">Apple EarPods (USB-C)</h5>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div class="btn-group">
+                                                <button onclick="sepeteEkle('Apple EarPods (USB-C)', 449)" class="btn btn-sm btn-outline-primary">Sepete ekle</button>
+                                                <button onclick="sepeteEkle('Apple EarPods (USB-C)', 449, true)" class="btn btn-sm btn-primary">Satın al</button>
+                                            </div>
+                                            <small class="text-success font-weight-bold">449 TL</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col mb-4">
+                                <div class="card shadow-sm h-100 border-0">
+                                    <div class="card-img-container"><img src="kulaklik6.png"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-bold text-primary"> Açık pembe çantalı kulaklık</h5>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div class="btn-group">
+                                                <button onclick="sepeteEkle('Açık pembe çantalı kulaklık', 1299)" class="btn btn-sm btn-outline-primary">Sepete ekle</button>
+                                                <button onclick="sepeteEkle('Açık pembe çantalı kulaklık', 1299, true)" class="btn btn-sm btn-primary">Satın al</button>
+                                            </div>
+                                            <small class="text-success font-weight-bold">1.299 TL</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col mb-4">
+                                <div class="card shadow-sm h-100 border-0">
+                                    <div class="card-img-container"><img src="kulaklik7.png"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-bold text-primary">Kedi kulaklı RGB ledli kulaklık</h5>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div class="btn-group">
+                                                <button onclick="sepeteEkle('Kedi kulaklı RGB ledli kulaklık', 1599)" class="btn btn-sm btn-outline-primary">Sepete ekle</button>
+                                                <button onclick="sepeteEkle('Kedi kulaklı RGB ledli kulaklık', 1599, true)" class="btn btn-sm btn-primary">Satın al</button>
+                                            </div>
+                                            <small class="text-success font-weight-bold">1.599 TL</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col mb-4">
+                                <div class="card shadow-sm h-100 border-0">
+                                    <div class="card-img-container"><img src="kulaklik8.png"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-bold text-primary">Kulak üstü kulaklık</h5>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div class="btn-group">
+                                                <button onclick="sepeteEkle('Kulak üstü kulaklık', 2199)" class="btn btn-sm btn-outline-primary">Sepete ekle</button>
+                                                <button onclick="sepeteEkle('Kulak üstü kulaklık', 2199, true)" class="btn btn-sm btn-primary">Satın al</button>
+                                            </div>
+                                            <small class="text-success font-weight-bold">2.199 TL</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col mb-4">
+                                <div class="card shadow-sm h-100 border-0">
+                                    <div class="card-img-container"><img src="kulaklik9.png"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title font-weight-bold text-primary">Huawei FreeClip açık kulaklık</h5>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <div class="btn-group">
+                                                <button onclick="sepeteEkle('Huawei FreeClip açık kulaklık', 3499)" class="btn btn-sm btn-outline-primary">Sepete ekle</button>
+                                                <button onclick="sepeteEkle('Huawei FreeClip açık kulaklık', 3499, true)" class="btn btn-sm btn-primary">Satın al</button>
+                                            </div>
+                                            <small class="text-success font-weight-bold">3.499 TL</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="sticky-footer bg-white">
+                    <div class="container my-auto text-center"><span>Melodi Kutusu © 2026</span></div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-sb-admin-2/4.1.3/js/sb-admin-2.min.js"></script>
+
+    <script>
+    
+function sepeteEkle(urunAdi, fiyat, satinAl = false) {
+    let sepet = JSON.parse(localStorage.getItem('sepet')) || [];
+    sepet.push({ ad: urunAdi, fiyat: fiyat });
+    localStorage.setItem('sepet', JSON.stringify(sepet));
+    
+    const sepetSayaci = document.querySelector('.badge-counter');
+    if(sepetSayaci) { sepetSayaci.innerText = sepet.length; }
+
+    if(satinAl) {
+        window.location.href = 'checkout.html';
+    } else {
+        alert(urunAdi + ' sepete eklendi!');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    let sepet = JSON.parse(localStorage.getItem('sepet')) || [];
+    const sepetSayaci = document.querySelector('.badge-counter');
+    if(sepetSayaci) { sepetSayaci.innerText = sepet.length; }
+});
+
+    </script>
+</body>
+</html>
